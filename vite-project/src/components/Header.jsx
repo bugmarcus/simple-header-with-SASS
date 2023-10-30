@@ -1,8 +1,9 @@
 import Logo from "../assets/Logo.svg";
+import styles from "./style.module.scss";
 
 export const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div>
         <img src={Logo} alt="Minha logo" />
         <nav>
@@ -10,8 +11,10 @@ export const Header = () => {
             <li>home</li>
             <li>sobre</li>
             <li>contato</li>
-            <a href="#">Fale agora</a>
           </ul>
+          <a className={styles.button} href="#">
+            Fale agora
+          </a>
         </nav>
       </div>
     </header>

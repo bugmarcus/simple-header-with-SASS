@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import "../src/styles.scss";
 
 function App() {
   return (
